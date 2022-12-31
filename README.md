@@ -2,6 +2,8 @@
 
 > Inspiration: [Puget Systems - Ubuntu 22.04 Server Autoinstall ISO](https://www.pugetsystems.com/labs/hpc/ubuntu-22-04-server-autoinstall-iso/)
 
+Create an ISO that autoinstalls Ubuntu
+
 ## How to use?
 1. Download the Ubuntu ISO from the official website
 2. Rename `user-data.example` to `user-data`
