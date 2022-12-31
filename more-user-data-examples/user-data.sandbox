@@ -8,6 +8,7 @@ autoinstall:
     hostname: the-home-server
     password: "$6$CAC6ErZ9$WGW8dRhY9JYm.808631A6rz/MDxejNK2wP3p2aF1IOBiFzpAeXORX6QGszfzRdVzeWZnD10ntBM/2cSt94W7w1"
     username: flo
+  shutdown: poweroff # Shutdown so it doesn't continuously reinstall (default option in grub is to autoinstall)
   ssh:
     allow-pw: true
     install-server: true

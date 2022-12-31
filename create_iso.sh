@@ -65,8 +65,6 @@ mkdir TMP
 # Extract ISO
 7z -y x "$ISO" -oTMP
 
-#rm -rf "./TMP/[BOOT]" # Not sure => Maybe remove this line!
-
 # Configure Grub to launch autoinstall automatically
 cat <<EOF >./TMP/boot/grub/grub.cfg
 set timeout=3

@@ -12,6 +12,7 @@ autoinstall:
   locale: en_US.UTF-8
   keyboard:
     layout: us
+  shutdown: poweroff # Shutdown so it doesn't continuously reinstall (default option in grub is to autoinstall)
   identity:
     hostname: myhost
     password: "$6$exDY1mhS4KUYCE/2$zmn9ToZwTKLhCw.b4/b.ZRTIZM30JZ4QrOQ2aOXJ8yk96xpcCof0kxKwuX1kqLG/ygbJ1f8wxED22bTL4F46P0"
