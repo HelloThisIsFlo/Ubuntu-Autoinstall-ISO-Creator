@@ -4,7 +4,7 @@
 
 ## How to use?
 1. Download the Ubuntu ISO from the official website
-2. Rename `user-data.template` to `user-data`
+2. Rename `user-data.example` to `user-data`
 3. Customize `user-data` (See [official doc](https://ubuntu.com/server/docs/install/autoinstall-reference))
 4. Run:
    ```
