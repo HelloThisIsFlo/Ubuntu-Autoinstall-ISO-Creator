@@ -4,6 +4,12 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 
 cd "$DIR"
 
+# Make sure we are running on ubuntu
+if [ ! -f /etc/os-release ]; then
+    echo "This script must be run on Ubuntu"
+    exit 1
+fi
+
 # Install 'pwgen' cli tool
 sudo apt install pwgen >/dev/null 2>&1
 

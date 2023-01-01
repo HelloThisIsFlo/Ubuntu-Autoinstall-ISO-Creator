@@ -8,7 +8,7 @@ autoinstall:
   identity:
     hostname: the-home-server
     username: flo
-    password: "$6y6caazVIetc"
+    password: "$6$tdEne42I$qHnrWl1gx3.oPh3Dwy2LsKHiBEBFIJUJotsPQ7KIfauX3JHw5r4nyTBACHk92ZrGBNkiu4kAp9qgLORsziRRv."
   ssh:
     install-server: true
     allow-pw: false
