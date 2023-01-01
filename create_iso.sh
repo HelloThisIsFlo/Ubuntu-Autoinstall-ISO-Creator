@@ -67,8 +67,8 @@ mkdir TMP
 
 # Configure Grub to launch autoinstall automatically
 cat <<EOF >./TMP/boot/grub/grub.cfg
-set timeout=3
-menuentry "AUTOINSTALL" {
+set timeout=60
+menuentry "AUTOINSTALL - THIS WILL ERASE ALL DATA ON THE DISK !!!" {
 	set gfxpayload=keep
 	linux   /casper/vmlinuz quiet autoinstall ds=nocloud\;s=/cdrom/autoinstall-config/  ---
 	initrd  /casper/initrd
