@@ -1,0 +1,53 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US.UTF-8
+  keyboard:
+    layout: us
+  shutdown: poweroff # Shutdown so it doesn't continuously reinstall (default option in grub is to autoinstall)
+  identity:
+    hostname: the-home-server
+    username: flo
+    password: "$6y6caazVIetc"
+  ssh:
+    install-server: true
+    allow-pw: false
+    authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCqafZxB8pmwKOLhn2K+eozZ4YP1PFC0jQXhL8eR7HxhBdEcn364o4I6EV9BBIxczPZjQgBktKOmRWO2CZowK6ttDhMDIyeMgo0RMziT0Q7Hw1KLl16li5WiKDqLEcTQEuE3tYGS/W93NZOiCyK0+a0urejPZ9g+YhyyAzfFrJmk2mDQxxFgsFOsdyVMPxRlFcL0eUBqNKu95H7S2BF9oivIY2Iakd85ZzTbBxsDDTxLPVWsz1NgsEA5CBaLiYkweVHFlKk1BKM585C7dA6AgP4zOwjbTHyPSigVtXGdhYk5ZLSLTBs0VctKKVrbW82tLOIKx9xuop6IRTHf7QfKvTrttLWSK0axn4kBMRWCcLTZafIQ6yanrLM5sdz4roZ3v46ImNvIweuh55SnM72WM0mg5oy7sLt1YAVbSMC/CL8xYBzLhXZway+rHAh2Gw7v3DpgxOGKzYLdlcTA8TwhH4d1H8ipf5ueppwcwV1JGuEsnCJd4Dozj7aI/zqBCWqghHMRUgqIOdVEPWLmGZ0IIyOTKkGQinK9EAsyGfNMmwnsjyKZVLZfPCWaYQZ36KaywA6TVyKlAe+0+LF4wkAOz5lDERAnVq9F/FyEIwhEmKA7aKjIs5I+UIU3lc/Nrdtiey19xXz99jj3VRPhRfeKmt+H17xslT/IX4qo+29HfpsBw== shockn745@gmail.com
+  packages:
+    - zsh
+    - build-essential
+    - autoconf
+    - automake
+    - build-essential
+    - curl
+    - dirmngr
+    - fop
+    - gpg
+    - libbz2-dev
+    - libffi-dev
+    - libgl1-mesa-dev
+    - libglu1-mesa-dev
+    - liblzma-dev
+    - libncurses-dev
+    - libncurses5-dev
+    - libncursesw5-dev
+    - libpng-dev
+    - libreadline-dev
+    - libsqlite3-dev
+    - libssh-dev
+    - libssl-dev
+    - libtool
+    - libwxgtk3.0-gtk3-dev
+    - libxslt-dev
+    - libyaml-dev
+    - llvm
+    - m4
+    - tk-dev
+    - unixodbc-dev
+    - unzip
+    - wget
+    - xsltproc
+    - xz-utils
+    - zlib1g-dev
+    - python3
