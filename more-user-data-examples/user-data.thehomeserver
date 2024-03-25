@@ -9,6 +9,18 @@ autoinstall:
     hostname: thehome
     username: flo
     password: "$6$tdEne42I$qHnrWl1gx3.oPh3Dwy2LsKHiBEBFIJUJotsPQ7KIfauX3JHw5r4nyTBACHk92ZrGBNkiu4kAp9qgLORsziRRv."
+  
+
+  # This section has not been tested yet => If it works remove this comment
+  network:
+    version: 2
+    ethernets:
+      enp3s0:
+        dhcp4: true
+      enx7cc2c64b3139: # The USB dongle -> enx<MAC address>
+        dhcp4: true
+
+
   ssh:
     install-server: true
     allow-pw: false
