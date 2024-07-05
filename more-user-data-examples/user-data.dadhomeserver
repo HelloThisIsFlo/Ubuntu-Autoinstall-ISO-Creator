@@ -9,6 +9,12 @@ autoinstall:
     hostname: dadhome
     username: flo
     password: "$6$tdEne42I$qHnrWl1gx3.oPh3Dwy2LsKHiBEBFIJUJotsPQ7KIfauX3JHw5r4nyTBACHk92ZrGBNkiu4kAp9qgLORsziRRv."
+  network:
+    version: 2
+    ethernets:
+      enp3s0:
+        dhcp4: true
+        dhcp6: false
   ssh:
     install-server: true
     allow-pw: false
